@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>CSS</title>
+</head>
+<body>
+	<div class="main">
+		<h1>CSS3</h1>
+		<div class="chapter">
+			<h2>Intro</h2>
+			<div>
+				<p><code>link</code> - html tag for the external files</p>
+				<p>+ <code>href</code> - hypertext reference path</p>
+				<p>+ <code>type</code> - type of document</p>
+				<p>= <span class="value">text/css</span> - for css</p>
+				<p>+ <code>rel</code> - relationship</p>
+				<p>= <span class="value">stylesheet</span> - for css</p>
+				<p><code>style</code> - html tag for the internal css</p>
+				<p>+ <code>type</code> - type of document</p>
+				<p>= <span class="value">text/css</span> - for css</p>
+				<p><code>@import url();</code> - css rule to import another css</p>
+				<p>! alternatively can be done using multiple <code>link</code></p>
+				<h3>The Great Reset</h3>
+				<p><code>* {}</code> - target all the elements</p>
+				<p>+ <code>margin: 0</code></p>
+				<p>+ <code>padding: 0</code></p>
+				<p>+ <code>box-sizing: border-box</code></p>
+				<h3>Selectors</h3>
+				<p><code>* {}</code> - universal</p>
+				<p><code>h1, h2, h3 {}</code> - type</p>
+				<p><code>.className {}</code> - class</p>
+				<p><code>#idName {}</code> - id</p>
+				<p><code>body > div {}</code> - child</p>
+				<p><code>body div {}</code> - descendant</p>
+				<p><code>h1 + div {}</code> - adjacent sibling</p>
+				<p><code>h1 ~ div {}</code> - general sibling</p>
+				<h3>Attribute Selectors</h3>
+				<p><code>p[attributeName]</code> - existence</p>
+				<p><code>p[class="className"]</code> - equality (only one class)</p>
+				<p><code>p[class~="className"]</code> - space (list of classes)</p>
+				<hr>
+				<p><span class="value">!important</span> - css rule override</p>
+				<p><span class="value">inherit</span> - inherit parental value</p>
+			</div>
+		</div>
+		<!-- /.chapter intro -->
+		<div class="chapter">
+			<h2>Color</h2>
+			<div>
+				<p><code>color</code> - foreground/text</p>
+				<p><code>background-color</code> - background</p>
+				<p><code>opacity</code></p>
+				<p><span class="value">rgba()</span> - a for alpha/opacity</p>
+			</div>
+		</div>
+		<!-- /.chapter color -->
+		<div class="chapter">
+			<h2>Text</h2>
+			<div>
+				<p><code>font-family</code></p>
+				<p><code>font-size</code></p>
+				<p><code>@font-face {}</code> - css rule to import a font</p>
+				<p>+ <code>font-family</code> - declaration to name the font</p>
+				<p>+ <code>src</code> - declaration provide url for the font</p>
+				<p><code>font-weight</code></p>
+				<p><code>font-style</code></p>
+				<p><code>text-transform</code></p>
+				<p><code>text-decoration</code></p>
+				<p><code>line-height</code></p>
+				<p><code>letter-spacing</code></p>
+				<p><code>word-spacing</code></p>
+				<p><code>text-align</code></p>
+				<p><code>vertical-align</code> - for inline elements/table cells</p>
+				<p><code>text-indent</code> - can also take negative values</p>
+				<p><code>text-shadow</code></p>
+				<h3>Pseudo Elements/Classes</h3>
+				<p><code>:first-letter</code> - selects first letter</p>
+				<p><code>:first-line</code> - selects first line</p>
+				<p><code>:link</code> - selects unvisited link</p>
+				<p><code>:visited</code></p>
+				<p><code>:hover</code></p>
+				<p><code>:focus</code></p>
+				<p><code>:active</code></p>
+			</div>
+		</div>
+		<!-- /.chapter text -->
+		<div class="chapter">
+			<h2>Boxes</h2>
+			<div>
+				<p><code>width</code></p>
+				<p><code>min-width</code></p>
+				<p><code>max-width</code></p>
+				<p><code>height</code></p>
+				<p><code>min-height</code></p>
+				<p><code>max-height</code></p>
+				<p><code>overflow</code></p>
+				<p><code>border-width</code></p>
+				<p><code>border-style</code></p>
+				<p><code>border-color</code></p>
+				<p><code>border</code> - shorthand for w/s/c</p>
+				<p><code>border-radius</code></p>
+				<p><code>box-shadow</code></p>
+				<p>= <span class="value">inset</span> - inside shadow</p>
+				<p><code>padding</code></p>
+				<p><code>margin</code></p>
+				<p>= <span class="value">auto</span> - center a box horizontally</p>
+				<p><code>display</code></p>
+				<p>= <span class="value">inline</span></p>
+				<p>= <span class="value">inline-block</span></p>
+				<p>= <span class="value">block</span></p>
+				<p>= <span class="value">none</span></p>
+				<p>= <span class="value">flex</span></p>
+				<p>= <span class="value">grid</span></p>
+				<p><code>visibility</code></p>
+			</div>
+		</div>
+		<!-- /.chapter boxes -->
+		<div class="chapter">
+			<h2>Lists, Tables, Forms</h2>
+			<div>
+				<h3>Lists</h3>
+				<p><code>list-style-type</code></p>
+				<p><code>list-style-image</code></p>
+				<p>= <span class="value">url()</span></p>
+				<p><code>list-style-position</code></p>
+				<p><code>list-style</code> - shorthand for t/i/p</p>
+				<h3>Tables</h3>
+				<p><code>empty-cells</code></p>
+				<p><code>border-spacing</code></p>
+				<p><code>border-collapse</code></p>
+				<hr>
+				<p><code>cursor</code> - cursor styles</p>
+			</div>
+		</div>
+		<!-- /.chapter layout -->
+		<div class="chapter">
+			<h2>Layout</h2>
+			<div>
+				<p><code>position</code></p>
+				<p>= <span class="value">static</span> - normal flow (default)</p>
+				<p>= <span class="value">relative</span> - move within the flow</p>
+				<p>= <span class="value">absolute</span> - take out of the flow</p>
+				<p>! set the parent as relative to avoid escaping to the root</p>
+				<p>= <span class="value">fixed</span> - fixed within the viewport</p>
+				<p><code>z-index</code> - stacking override</p>
+				<p><code>float</code> - float elements left or right</p>
+				<p><code>clear</code> - stop floaters from touching</p>
+				<p>! use <code>overflow</code> on collapsing parents</p>
+			</div>
+		</div>
+		<!-- /.chapter layout -->
+		<div class="chapter">
+			<h2>Flex & Grid</h2>
+			<div></div>
+		</div>
+		<!-- /.chapter flex & grid -->
+		<div class="chapter">
+			<h2>Images</h2>
+			<div>
+				<p><code>background-image</code></p>
+				<p>= <span class="value">url()</span></p>
+				<p><code>background-repeat</code></p>
+				<p>= <span class="value">repeat</span></p>
+				<p>= <span class="value">repeat-x</span></p>
+				<p>= <span class="value">repeat-y</span></p>
+				<p>= <span class="value">no-repeat</span></p>
+				<p><code>background-attachment</code></p>
+				<p>= <span class="value">fixed</span></p>
+				<p>= <span class="value">scroll</span></p>
+				<p><code>background-position</code></p>
+				<p>= <span class="value">l/center/r top/center/bottom</span></p>
+				<p>! if only one value is specified, the other defaults to <span class="value">center</span></p>
+				<p><code>background-size</code></p>
+				<p><code>background</code> - shorthand for background color/i/r/a/p/s</p>
+				<h3>Gradients</h3>
+				<p><code>background-image</code></p>
+				<p>= <span class="value">linear-gradient()</span></p>
+				<p>= <span class="value">radial-gradient()</span></p>
+				<p>= <span class="value">conic-gradient()</span></p>
+			</div>
+		</div>
+		<!-- /.chapter images -->
+		<div class="chapter">
+			<h2>Media Queries</h2>
+			<div></div>
+		</div>
+		<!-- /.chapter media queries -->
+		<div class="chapter">
+			<h2>Variables</h2>
+			<div></div>
+		</div>
+		<!-- /.chapter variables -->
+	</div>
+	<img id="endPic" src="img/2.png" width="360">
+</body>
+</html>
